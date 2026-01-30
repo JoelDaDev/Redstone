@@ -23,5 +23,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = App()
     window.show()
-    app.setStyle("Breeze")
     sys.exit(app.exec())
