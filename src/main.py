@@ -1,6 +1,7 @@
 from PySide6.QtWidgets import QMainWindow, QApplication, QDialog
 import sys
 from pathlib import Path
+from utils.enums import Page
 from ui.ui_mainWindow import Ui_MainWindow
 from ui.ui_newProject import Ui_Dialog as newProj
 from core.project_manager import ProjectManager
@@ -12,6 +13,7 @@ class App(QMainWindow):
 
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+        self.ui.appContainer.setCurrentIndex(Page.MAIN_PAGE)
 
         if getattr(sys, 'frozen', False):
             # Binary mode
@@ -46,6 +48,7 @@ class App(QMainWindow):
             "version": dialogUI.packVersion.currentText()
         }
         self.projectManager.newProject(packDetails)
+        self.ui.appContainer.setCurrentIndex(Page.HOME)
 
         dialog.accept()
 

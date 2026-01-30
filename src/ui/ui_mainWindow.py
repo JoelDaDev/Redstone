@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainWindowFVyVlY.ui'
+## Form generated from reading UI file 'mainWindowDiQsmL.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.1
 ##
@@ -16,9 +16,8 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QIcon, QImage, QKeySequence, QLinearGradient,
     QPainter, QPalette, QPixmap, QRadialGradient,
     QTransform)
-from PySide6.QtWidgets import (QApplication, QComboBox, QGridLayout, QLabel,
-    QLineEdit, QMainWindow, QMenu, QMenuBar,
-    QPlainTextEdit, QPushButton, QSizePolicy, QSpacerItem,
+from PySide6.QtWidgets import (QApplication, QGridLayout, QLabel, QMainWindow,
+    QMenu, QMenuBar, QPushButton, QSizePolicy,
     QStackedWidget, QStatusBar, QWidget)
 
 class Ui_MainWindow(object):
@@ -68,103 +67,11 @@ class Ui_MainWindow(object):
         self.gridLayout_2.addWidget(self.titleLabel, 0, 0, 1, 1)
 
         self.appContainer.addWidget(self.homeScreen)
-        self.newProjectScreen = QWidget()
-        self.newProjectScreen.setObjectName(u"newProjectScreen")
-        self.gridLayout_3 = QGridLayout(self.newProjectScreen)
+        self.projectScreen = QWidget()
+        self.projectScreen.setObjectName(u"projectScreen")
+        self.gridLayout_3 = QGridLayout(self.projectScreen)
         self.gridLayout_3.setObjectName(u"gridLayout_3")
-        self.gridLayout_4 = QGridLayout()
-        self.gridLayout_4.setObjectName(u"gridLayout_4")
-        self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
-
-        self.gridLayout_4.addItem(self.horizontalSpacer_2, 3, 3, 1, 1)
-
-        self.projectName = QLineEdit(self.newProjectScreen)
-        self.projectName.setObjectName(u"projectName")
-
-        self.gridLayout_4.addWidget(self.projectName, 3, 2, 1, 1, Qt.AlignmentFlag.AlignVCenter)
-
-        self.projectNamespace = QLineEdit(self.newProjectScreen)
-        self.projectNamespace.setObjectName(u"projectNamespace")
-        self.projectNamespace.setInputMethodHints(Qt.InputMethodHint.ImhNone)
-        self.projectNamespace.setDragEnabled(False)
-
-        self.gridLayout_4.addWidget(self.projectNamespace, 4, 2, 1, 1)
-
-        self.minecraftVersion = QComboBox(self.newProjectScreen)
-        self.minecraftVersion.setObjectName(u"minecraftVersion")
-
-        self.gridLayout_4.addWidget(self.minecraftVersion, 8, 2, 1, 1)
-
-        self.label_3 = QLabel(self.newProjectScreen)
-        self.label_3.setObjectName(u"label_3")
-
-        self.gridLayout_4.addWidget(self.label_3, 5, 1, 1, 1)
-
-        self.projectAuthor = QLineEdit(self.newProjectScreen)
-        self.projectAuthor.setObjectName(u"projectAuthor")
-
-        self.gridLayout_4.addWidget(self.projectAuthor, 6, 2, 1, 1)
-
-        self.projectDescription = QPlainTextEdit(self.newProjectScreen)
-        self.projectDescription.setObjectName(u"projectDescription")
-
-        self.gridLayout_4.addWidget(self.projectDescription, 5, 2, 1, 1)
-
-        self.label = QLabel(self.newProjectScreen)
-        self.label.setObjectName(u"label")
-
-        self.gridLayout_4.addWidget(self.label, 3, 1, 1, 1)
-
-        self.projectVersion = QLineEdit(self.newProjectScreen)
-        self.projectVersion.setObjectName(u"projectVersion")
-
-        self.gridLayout_4.addWidget(self.projectVersion, 7, 2, 1, 1)
-
-        self.label_4 = QLabel(self.newProjectScreen)
-        self.label_4.setObjectName(u"label_4")
-
-        self.gridLayout_4.addWidget(self.label_4, 6, 1, 1, 1)
-
-        self.label_6 = QLabel(self.newProjectScreen)
-        self.label_6.setObjectName(u"label_6")
-
-        self.gridLayout_4.addWidget(self.label_6, 7, 1, 1, 1)
-
-        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
-
-        self.gridLayout_4.addItem(self.horizontalSpacer, 3, 0, 1, 1)
-
-        self.label_5 = QLabel(self.newProjectScreen)
-        self.label_5.setObjectName(u"label_5")
-
-        self.gridLayout_4.addWidget(self.label_5, 8, 1, 1, 1)
-
-        self.label_2 = QLabel(self.newProjectScreen)
-        self.label_2.setObjectName(u"label_2")
-
-        self.gridLayout_4.addWidget(self.label_2, 4, 1, 1, 1)
-
-        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
-
-        self.gridLayout_4.addItem(self.verticalSpacer_2, 2, 1, 1, 2)
-
-        self.newProjLabel = QLabel(self.newProjectScreen)
-        self.newProjLabel.setObjectName(u"newProjLabel")
-
-        self.gridLayout_4.addWidget(self.newProjLabel, 1, 1, 1, 2)
-
-        self.verticalSpacer_3 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
-
-        self.gridLayout_4.addItem(self.verticalSpacer_3, 0, 1, 1, 2)
-
-
-        self.gridLayout_3.addLayout(self.gridLayout_4, 0, 0, 1, 1)
-
-        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
-
-        self.gridLayout_3.addItem(self.verticalSpacer, 1, 0, 1, 1)
-
-        self.appContainer.addWidget(self.newProjectScreen)
+        self.appContainer.addWidget(self.projectScreen)
 
         self.gridLayout.addWidget(self.appContainer, 0, 0, 1, 1)
 
@@ -196,14 +103,6 @@ class Ui_MainWindow(object):
         self.newProjectBtn.setText(QCoreApplication.translate("MainWindow", u"New Project", None))
         self.copyrightLabel.setText(QCoreApplication.translate("MainWindow", u"Created by Joel Da Dev - Copyright 2026", None))
         self.titleLabel.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:20pt; font-weight:700;\">Redstone</span></p><p align=\"center\"><span style=\" font-size:12pt;\">By JoelDaDev - v2026.1</span></p></body></html>", None))
-        self.projectNamespace.setInputMask("")
-        self.label_3.setText(QCoreApplication.translate("MainWindow", u"Description:", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"Project Name:", None))
-        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Author:", None))
-        self.label_6.setText(QCoreApplication.translate("MainWindow", u"Pack Version:", None))
-        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Minecraft Version:", None))
-        self.label_2.setText(QCoreApplication.translate("MainWindow", u"Namespace:", None))
-        self.newProjLabel.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:20pt; font-weight:700;\">New Project</span></p></body></html>", None))
         self.menuFile.setTitle(QCoreApplication.translate("MainWindow", u"File", None))
     # retranslateUi
 
